@@ -121,6 +121,3 @@ root@pwn:/ctf/work# /glibc/2.28/64/ld-2.28.so /bin/ls -l /
 #### 2021-04-10
 based on the work from 0xTac and skysider, changed base image, added checksec, added PS1 to bashrc, removed ZSH, assured correct timezone for SE.
 corrected issue with installing pip2, changed entrypoint
-
-### Others
-If you really have some new and useful tools need to add in the pwndocker, please submit issue, thanks.
