@@ -175,4 +175,6 @@ COPY gdbinit /root/.gdbinit
 COPY checksec /usr/local/sbin
 RUN chmod a+x /ctf/linux_server /ctf/linux_server64
 
+echo 'PS1="\[\e[31;1m\]\u\[\e[32;1m\]\[\e[37;2m\](\[\e[32;1m\]\w\[\e[37;1m\])\[\e[31;1m\]> \[\e[0m\]"' >> /root/.bashrc
+
 ENTRYPOINT ["/bin/bash"]
