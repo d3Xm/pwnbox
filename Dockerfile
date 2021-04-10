@@ -16,7 +16,7 @@ RUN dpkg --add-architecture i386 && \
     g++-multilib \
     cmake \
     gcc \
-#    ipython \
+    ipython \
     python3-dev \
     python3-pip \
     python3-distutils \
