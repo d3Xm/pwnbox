@@ -27,18 +27,16 @@ docker run -d --rm -v /home/kali/shares/:/shares -p -p 23946:23946 --cap-add=SYS
 - [tmux](https://tmux.github.io/)     —— a terminal multiplexer
 - [ltrace](https://linux.die.net/man/1/ltrace)      —— trace library function call
 - [strace](https://linux.die.net/man/1/strace)     —— trace system call
-
-### added softwares
-
-- [zsh && oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) -- A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration.
 - [peda](https://github.com/scwuaptx/peda) -- Python Exploit Development Assistance for GDB
 - [socat](http://www.dest-unreach.org/socat/) -- A relay for bidirectional data transfer between two independent data channels.
 - [z3](https://github.com/Z3Prover/z3) --  Theorem Prover
 - [seccomp-tools](https://github.com/david942j/seccomp-tools) -- Provide powerful tools for seccomp analysis
 - [qemu](https://www.qemu.org) -- QEMU is a generic and open source machine emulator and virtualizer.
 .gdbinit
-.zshrc
 .tmux.conf
+
+### Added software
+- [checksec](https://github.com/slimm609/checksec.sh) -- Check the properties of executables (like PIE, RELRO, PaX, Canaries, ASLR, Fortify Source)
 
 ### included glibc
 
