@@ -39,8 +39,8 @@ docker exec -it [pwnbox_container_ID] /bin/bash
 - [seccomp-tools](https://github.com/david942j/seccomp-tools) -- Provide powerful tools for seccomp analysis
 - [qemu](https://www.qemu.org) -- QEMU is a generic and open source machine emulator and virtualizer.
 - [checksec](https://github.com/slimm609/checksec.sh) -- Check the properties of executables (like PIE, RELRO, PaX, Canaries, ASLR, Fortify Source)
-.gdbinit
-.tmux.conf
+- .gdbinit
+- .tmux.conf
 
 
 ### included glibc
