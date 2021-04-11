@@ -21,7 +21,7 @@ docker exec -it pwnbox /bin/bash
 - [gdb-peda-intel] ——
 - [gdb-peda-arm](https://github.com/alset0326/peda-arm) —— PEDA-ARM - Python Exploit Development Assistance for GDB
 - [gdb-pwndbg](https://github.com/pwndbg/pwndbg)  —— a GDB plug-in that makes debugging with GDB suck less, with a focus on features needed by low-level software developers, hardware hackers, reverse-engineers and exploit developers
-- [gdb-gef]
+- [gdb-gef](https://github.com/hugsy/gef) —— is a set of commands for x86/64, ARM, MIPS, PowerPC and SPARC to assist exploit developers and reverse-engineers when using old school GDB
 - [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)  —— facilitate ROP exploitation tool
 - [roputils](https://github.com/inaz2/roputils)     —— A Return-oriented Programming toolkit
 - [one_gadget](https://github.com/david942j/one_gadget) —— A searching one-gadget of execve('/bin/sh', NULL, NULL) tool for amd64 and i386
