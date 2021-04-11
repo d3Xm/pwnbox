@@ -127,16 +127,17 @@ RUN pip install --upgrade setuptools && \
 RUN gem install one_gadget seccomp-tools && rm -rf /var/lib/gems/2.*/cache/*
 
 
-RUN git clone https://github.com/scwuaptx/Pwngdb.git /root/Pwngdb && \
-    cd /root/Pwngdb && cat /root/Pwngdb/.gdbinit  >> /root/.gdbinit && \
-    sed -i "s?source ~/peda/peda.py?# source ~/peda/peda.py?g" /root/.gdbinit
-
-
 RUN git clone https://github.com/niklasb/libc-database.git libc-database && \
     cd libc-database && ./get || echo "/libc-database/" > ~/.libcdb_path
 
+RUN git clone https://github.com/d3Xm/gdb-peda-pwndbg-gef.git  && \
+    cd ~/gdb-peda-pwndbg-gef && ./install.sh 
+
 RUN git clone https://github.com/pwndbg/pwndbg && \
-    cd pwndbg &&  ./setup.sh
+    cd pwndbg &&  ./setup.sh \
+    cd .. \
+    mv pwndbg ~/pwndbg-src
+    echo "source ~/pwndbg-src/gdbinit.py" > ~/.gdbinit_pwndbg
 
 
 WORKDIR /ctf/work/
@@ -171,7 +172,6 @@ COPY --from=skysider/glibc_builder32:2.31 /glibc/2.31/32 /glibc/2.31/32
 
 COPY linux_server linux_server64  /ctf/
 COPY tmux.conf /root/.tmux.conf
-COPY gdbinit /root/.gdbinit
 COPY checksec /usr/local/sbin
 RUN chmod a+x /ctf/linux_server /ctf/linux_server64
 
