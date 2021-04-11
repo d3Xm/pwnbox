@@ -131,7 +131,8 @@ RUN git clone https://github.com/niklasb/libc-database.git libc-database && \
     cd libc-database && ./get || echo "/libc-database/" > ~/.libcdb_path
 
 RUN git clone https://github.com/d3Xm/gdb-peda-pwndbg-gef.git  && \
-    cd ~/gdb-peda-pwndbg-gef && ./install.sh 
+    cd ~/gdb-peda-pwndbg-gef && \
+    ./install.sh 
 
 RUN git clone https://github.com/pwndbg/pwndbg && \
     cd pwndbg &&  ./setup.sh \
