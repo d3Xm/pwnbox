@@ -10,7 +10,7 @@ git clone https://github.com/d3Xm/pwnbox
 cd pwnbox
 docker build -t pwnbox .
 docker run -d --rm -v /home/kali/shares/:/shares -p 23946:23946 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -i pwnbox
-docker exec -it pwnbox /bin/bash
+docker exec -it [pwnbox_container_ID] /bin/bash
 ```
 
 ### included software
