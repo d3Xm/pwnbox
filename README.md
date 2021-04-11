@@ -2,7 +2,7 @@ pwnbox
 ===
 
 A docker environment for pwn ctf challenges or exploit dev based on **phusion/baseimage:18.04-1.0.0-amd64**
-Based on the work of skysider/pwndocker / 0xTac/Pwndocker.
+Based on the work of skysider/pwndocker & 0xTac/Pwndocker.
 
 ### Usage
 
