@@ -16,8 +16,12 @@ docker exec -it pwnbox /bin/bash
 ### included software
 
 - [pwntools](https://github.com/Gallopsled/pwntools)  —— CTF framework and exploit development library
-- [pwndbg](https://github.com/pwndbg/pwndbg)  —— a GDB plug-in that makes debugging with GDB suck less, with a focus on features needed by low-level software developers, hardware hackers, reverse-engineers and exploit developers
 - [pwngdb](https://github.com/scwuaptx/Pwngdb) —— gdb for pwn
+- [gdb-peda] (https://github.com/longld/peda) —— PEDA - Python Exploit Development Assistance for GDB
+- [gdb-peda-intel] ——
+- [gdb-peda-arm] https://github.com/alset0326/peda-arm —— PEDA-ARM - Python Exploit Development Assistance for GDB
+- [gdb-pwndbg](https://github.com/pwndbg/pwndbg)  —— a GDB plug-in that makes debugging with GDB suck less, with a focus on features needed by low-level software developers, hardware hackers, reverse-engineers and exploit developers
+- [gdb-gef]
 - [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)  —— facilitate ROP exploitation tool
 - [roputils](https://github.com/inaz2/roputils)     —— A Return-oriented Programming toolkit
 - [one_gadget](https://github.com/david942j/one_gadget) —— A searching one-gadget of execve('/bin/sh', NULL, NULL) tool for amd64 and i386
@@ -33,11 +37,10 @@ docker exec -it pwnbox /bin/bash
 - [z3](https://github.com/Z3Prover/z3) --  Theorem Prover
 - [seccomp-tools](https://github.com/david942j/seccomp-tools) -- Provide powerful tools for seccomp analysis
 - [qemu](https://www.qemu.org) -- QEMU is a generic and open source machine emulator and virtualizer.
+- [checksec](https://github.com/slimm609/checksec.sh) -- Check the properties of executables (like PIE, RELRO, PaX, Canaries, ASLR, Fortify Source)
 .gdbinit
 .tmux.conf
 
-### Added software
-- [checksec](https://github.com/slimm609/checksec.sh) -- Check the properties of executables (like PIE, RELRO, PaX, Canaries, ASLR, Fortify Source)
 
 ### included glibc
 
