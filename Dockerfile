@@ -140,6 +140,7 @@ RUN git clone https://github.com/pwndbg/pwndbg && \
     mv pwndbg ~/pwndbg-src \
     echo "source ~/pwndbg-src/gdbinit.py" > ~/.gdbinit_pwndbg
 
+RUN git clone https://github.com/scwuaptx/Pwngdb.git /root/Pwngdb 
 
 WORKDIR /ctf/work/
 
