@@ -2,6 +2,7 @@ pwnbox
 ===
 
 A docker environment for pwn ctf challenges or exploit dev based on **phusion/baseimage:18.04-1.0.0-amd64**
+Based on the work of skysider/pwndocker / 0xTac/Pwndocker.
 
 ### Usage
 
@@ -123,5 +124,8 @@ root@pwn:/ctf/work# /glibc/2.28/64/ld-2.28.so /bin/ls -l /
 ### ChangeLog
 
 #### 2021-04-10
-based on the work from 0xTac and skysider, changed base image, added checksec, added PS1 to bashrc, removed ZSH, assured correct timezone for SE.
+changed base image, added checksec, added PS1 to bashrc, removed ZSH, assured correct timezone for SE.
 corrected issue with installing pip2, changed entrypoint
+#### 2021-04-11
+Removed initialization of .gdbinit from Dockerfile, and added the setup for gdb and gdb-plugins with https://github.com/d3Xm/gdb-peda-pwndbg-gef
+fixed typos, fixed issue with angelheap() and module source error.
