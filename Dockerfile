@@ -136,7 +136,7 @@ RUN git clone https://github.com/d3Xm/gdb-peda-pwndbg-gef.git  && \
 RUN git clone https://github.com/pwndbg/pwndbg && \
     cd pwndbg &&  ./setup.sh \
     cd .. \
-    mv pwndbg ~/pwndbg-src
+    mv pwndbg ~/pwndbg-src \
     echo "source ~/pwndbg-src/gdbinit.py" > ~/.gdbinit_pwndbg
 
 
@@ -175,6 +175,6 @@ COPY tmux.conf /root/.tmux.conf
 COPY checksec /usr/local/sbin
 RUN chmod a+x /ctf/linux_server /ctf/linux_server64
 
-echo 'PS1="\[\e[31;1m\]\u\[\e[32;1m\]\[\e[37;2m\](\[\e[32;1m\]\w\[\e[37;1m\])\[\e[31;1m\]> \[\e[0m\]"' >> /root/.bashrc
+RUN echo 'PS1="\[\e[31;1m\]\u\[\e[32;1m\]\[\e[37;2m\](\[\e[32;1m\]\w\[\e[37;1m\])\[\e[31;1m\]> \[\e[0m\]"' >> /root/.bashrc
 
 ENTRYPOINT ["/bin/bash"]
