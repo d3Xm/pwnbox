@@ -17,9 +17,9 @@ docker exec -it pwnbox /bin/bash
 
 - [pwntools](https://github.com/Gallopsled/pwntools)  —— CTF framework and exploit development library
 - [pwngdb](https://github.com/scwuaptx/Pwngdb) —— gdb for pwn
-- [gdb-peda] (https://github.com/longld/peda) —— PEDA - Python Exploit Development Assistance for GDB
+- [gdb-peda](https://github.com/longld/peda) —— PEDA - Python Exploit Development Assistance for GDB
 - [gdb-peda-intel] ——
-- [gdb-peda-arm] https://github.com/alset0326/peda-arm —— PEDA-ARM - Python Exploit Development Assistance for GDB
+- [gdb-peda-arm](https://github.com/alset0326/peda-arm) —— PEDA-ARM - Python Exploit Development Assistance for GDB
 - [gdb-pwndbg](https://github.com/pwndbg/pwndbg)  —— a GDB plug-in that makes debugging with GDB suck less, with a focus on features needed by low-level software developers, hardware hackers, reverse-engineers and exploit developers
 - [gdb-gef]
 - [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)  —— facilitate ROP exploitation tool
