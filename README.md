@@ -47,7 +47,7 @@ docker exec -it [pwnbox_container_ID] /bin/bash
 
 Default compiled glibc path is `/glibc`.
 - 2.19  —— ubuntu 12.04 default libc version
-- 2.23  —— pwndocker default libc version
+- 2.23  —— pwnbox default libc version
 - 2.24  —— introduce vtable check in file struct
 - 2.26  —— https://abi-laboratory.pro/?view=changelog&l=glibc&v=2.26
 - 2.27  —— intruduce tcache in heap (since 2.26)
